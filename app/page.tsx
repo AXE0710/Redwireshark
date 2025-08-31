@@ -608,15 +608,16 @@ function DownloadAppModal({ open, onClose }: { open: boolean; onClose: () => voi
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40">
       <div className="bg-white rounded-md p-6 max-w-md w-full shadow-lg">
-        <h2 className="text-lg font-semibold mb-2">Instructions to Use Network Log Chat App</h2>
+        <h2 className="text-lg font-semibold mb-2">Instructions to Use RedWireShark</h2>
         <ol className="list-decimal ml-4 mb-3 text-sm text-gray-900">
-          <li>Locate the downloaded <b>network-log-chat.exe</b> file in your Downloads folder.</li>
-          <li>Double-click the file to launch the application.</li>
-          <li>If prompted by Windows SmartScreen, click "More info" &gt; "Run anyway".</li>
-          <li>Follow the on-screen instructions in the app to upload and analyze your network logs.</li>
+          <li>Npcap Packet Capture Driver (A one-time install)</li>
+          <li>website: https://npcap.com/#download</li>
+          <li>Administrator Privileges to Run the App</li>
+          <li>right-click on RedWireShark.exe and choose "Run as administrator"</li>
         </ol>
+        <h2 className="text-lg font-semibold mb-2">Happy Hacking</h2>
         <div className="text-xs text-gray-500 mb-2">
-          Need help? Contact support at <a href="mailto:support@yourdomain.com" className="underline">support@yourdomain.com</a>
+          Need help? Contact support at <a href="mailto:aayushkewat0710@gmail.com" className="underline">aayushkewat0710@gmail.com</a>
         </div>
         <button className="rounded bg-blue-600 px-4 py-2 text-white text-sm" onClick={onClose}>
           Close
@@ -712,7 +713,7 @@ export default function Page() {
   }, [handleText])
 
   const handleDownloadApp = useCallback(() => {
-    // Start download
+    // Start download 
     const link = document.createElement("a")
     link.href = APP_EXE_URL
     link.download = "network-log-chat.zip" // or .exe if you uploaded exe
@@ -746,7 +747,7 @@ export default function Page() {
           {/* Download App Message and Button */}
           <div className="mt-4 flex flex-col md:flex-row md:items-center gap-2">
             <span className="text-sm text-blue-700 font-medium">
-              Download our application for more features!
+              Download our application for moniter feature!
             </span>
             <button
               className="rounded bg-blue-700 px-4 py-2 text-white text-sm font-semibold"
